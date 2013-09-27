@@ -14,3 +14,4 @@ for f in $cf; do
 done
 hostname -v $newhn
 sysctl kernel.hostname=$newhn
+# your'd better reboot the system.
