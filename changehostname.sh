@@ -12,6 +12,6 @@ for f in $cf; do
 		sed -i "s:$oldhn:$newhn:g" $f
         fi
 done
-hostname -v $newhn
+hostname $newhn
 sysctl kernel.hostname=$newhn
 # your'd better reboot the system.
